@@ -1,4 +1,3 @@
-#__author__ = 'markafonistajyer'
 from collections import Counter
 
 dosya=open("nginx.log")
