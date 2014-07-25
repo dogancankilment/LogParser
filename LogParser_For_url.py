@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def log_parser():
     dosya=open("test.log")
     d={}
