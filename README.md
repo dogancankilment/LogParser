@@ -1,5 +1,8 @@
 LogParser
 =========
-Distinct url count
-Most requested urls
-Most time consuming urls Log parser should work with big log files.
+
+>Log Parser should work with big log files.
+
+* *Distinct url count*
+* *Most requested urls*
+* *Most time consuming urls Log parser* 
