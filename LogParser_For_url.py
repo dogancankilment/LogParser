@@ -2,24 +2,23 @@ from collections import Counter
 
 
 def log_parser():
-    dosya=open("test.log")
-    d={}
-    i=0
+    log_file = open("test.log")
+    d = {}
+    i = 0
 
-    for satir in dosya.readlines():
-        splitline = satir.split(' ') #bosluklara gore parcaliyor
-        d[i]=splitline[6] #url log dosyasinda yer aliyor
-        i=i+1
+    for line in log_file.readlines():
+        split_line = line.split(' ')  # split for blanks
+        d[i] = split_line[6]  # url data in log_file's six column
+        i += 1
 
     cnt = Counter()
 
     for j in d.values():
-        cnt[j]=cnt[j]+1
+        cnt[j] += 1
 
-    # print cnt
     print cnt.most_common(1)
 
-    dosya.close()
+    log_file.close()
 
 if __name__ == '__main__':
     log_parser()
